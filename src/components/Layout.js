@@ -50,20 +50,26 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          minHeight: '100vh',
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        {header}
-        {children}
-        <footer>
+        <div>
+          {header}
+          {children}
+        </div>
+        <footer style={{marginTop: rhythm(1)}}>
           <ul style={{margin: 0}}>
             <FooterListItem><a href="https://sheyiadekoya.me" target="_blank" rel="noopener noreferrer">About Me</a></FooterListItem>
             <FooterListItem><a href="https://mobile.twitter.com/sheyooo" target="_blank" rel="noopener noreferrer">Twitter</a></FooterListItem>
             <FooterListItem><a href="https://github.com/sheyooo" target="_blank" rel="noopener noreferrer">Github</a></FooterListItem>
           </ul>
         
-          <p style={{color: '#555'}}>
+          <p style={{color: '#555', marginBottom: 0}}>
             © {new Date().getFullYear()}, Made with ❤️ in 🇳🇬
           </p>
         </footer>
