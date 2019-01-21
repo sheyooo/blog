@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import styled from 'styled-components';
 import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
@@ -63,13 +64,28 @@ class Layout extends React.Component {
         {header}
         {children}
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <ul style={{margin: 0}}>
+            <FooterListItem><a href="https://sheyiadekoya.me" target="_blank" rel="noopener noreferrer">About Me</a></FooterListItem>
+            <FooterListItem><a href="https://mobile.twitter.com/sheyooo" target="_blank" rel="noopener noreferrer">Twitter</a></FooterListItem>
+            <FooterListItem><a href="https://github.com/sheyooo" target="_blank" rel="noopener noreferrer">Github</a></FooterListItem>
+          </ul>
+        
+          {/* © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
       </div>
     )
   }
 }
+
+const FooterListItem = styled.li`
+  ::before {
+    content: "• ";
+  }
+
+  display: inline-block;
+  margin-right: 1em;
+`;
 
 export default Layout
