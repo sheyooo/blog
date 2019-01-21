@@ -10,6 +10,17 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
+    let linkComponent =
+      <Link 
+        style={{
+          boxShadow: `none`,
+          textDecoration: `none`,
+          color: `inherit`,
+        }} to={`/`}
+      >
+        {title}
+      </Link>
+
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -19,16 +30,7 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          {linkComponent}
         </h1>
       )
     } else {
@@ -39,16 +41,7 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          {linkComponent}
         </h3>
       )
     }
@@ -70,9 +63,9 @@ class Layout extends React.Component {
             <FooterListItem><a href="https://github.com/sheyooo" target="_blank" rel="noopener noreferrer">Github</a></FooterListItem>
           </ul>
         
-          {/* © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
+          <p style={{color: '#555'}}>
+            © {new Date().getFullYear()}, Made with ❤️ in 🇳🇬
+          </p>
         </footer>
       </div>
     )

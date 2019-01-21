@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Seyi's Blog`,
+    title: `Seyi's Blog 👨‍💻`,
     author: `Seyi Adekoya`,
     description: `I write about things I've learnt or discovered`,
     siteUrl: `https://blog.sheyiadekoya.me/`,
@@ -57,13 +57,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Seyi's Blog`,
+        short_name: `Sheyi`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.ico`,
       },
     },
     `gatsby-plugin-offline`,

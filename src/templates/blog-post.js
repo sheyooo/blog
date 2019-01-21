@@ -14,14 +14,21 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <SEO title={post.frontmatter.title} description={post.frontmatter.shortBrief} />
         <h1>{post.frontmatter.title}</h1>
+        <h6 style={{
+          fontStyle: 'italic',
+          marginTop: rhythm(0.5),
+          color: '#555'
+        }}>
+          {post.frontmatter.shortBrief}
+        </h6>
         <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-0.5),
+            marginTop: rhythm(-0.0),
           }}
         >
           {post.frontmatter.date}
@@ -81,6 +88,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        shortBrief
       }
     }
   }

@@ -14,10 +14,10 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(0),
             }}
           >
-            {/* <Image
+            <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
@@ -29,9 +29,10 @@ function Bio() {
               imgStyle={{
                 borderRadius: `50%`,
               }}
-            /> */}
-            <p>
-              Blog by <strong>{author}</strong>, he currently lives in Nigeria 🇳🇬 but works remotely.
+            />
+            <p style={{marginBottom: rhythm(1)}}>
+              I am <strong><a style={{textDecoration: 'none'}} href="sheyiadekoya.me" target="_blank" rel="noopener noreferrer">{author}</a></strong>,
+              I live in Nigeria 🇳🇬 and work remotely at MindRight.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
