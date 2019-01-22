@@ -4,7 +4,7 @@ date: '2019-01-20T22:00:00.284Z'
 shortBrief: Solve the FizzBuzz challenge without using any conditional statements.
 ---
 
-When you start learning to code, you'll come accross different kinds of practice problems to help learn better. A very popular one is the <a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank" rel="noopener noreferrer">FizzBuzz</a> task.
+When you start learning to code, you’ll come accross different kinds of practice problems that will help you understand programming concepts better. A very popular one is the <a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank" rel="noopener noreferrer">FizzBuzz</a> task.
 
 Solving it the normal way gets boring, so here we're going to look at how much harder the challenge can get.
 
