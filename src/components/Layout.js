@@ -66,12 +66,12 @@ class Layout extends React.Component {
           <ul style={{margin: 0}}>
             <FooterListItem><a href="https://sheyiadekoya.me" target="_blank" rel="noopener noreferrer">About Me</a></FooterListItem>
             <FooterListItem><a href="https://mobile.twitter.com/sheyooo" target="_blank" rel="noopener noreferrer">Twitter</a></FooterListItem>
-            <FooterListItem><a href="https://github.com/sheyooo" target="_blank" rel="noopener noreferrer">Github</a></FooterListItem>
+            <FooterListItem><a href="https://github.com/sheyooo" target="_blank" rel="noopener noreferrer">GitHub</a></FooterListItem>
           </ul>
         
-          <p style={{color: '#555', marginBottom: 0}}>
+          {/* <p style={{color: '#555', marginBottom: 0}}>
             © {new Date().getFullYear()}, Made with ❤️ in 🇳🇬
-          </p>
+          </p> */}
         </footer>
       </div>
     )
